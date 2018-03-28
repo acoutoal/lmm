@@ -15,7 +15,15 @@
 #'  Vs is the variance of the allele effects for the ancestry informative SNPs assuming a random effects model with 0 mean.
 #'  Ve is the variance of the error term
 #'  
-#'  OUTPUT VALUE IS A LIST WITH
+#'  MODEL
+#'  b    ~ N(0, sqrt(Vg))
+#'  u    ~ N(0, sqrt(Vs))
+#'  e    ~ N(0, sqrt(Ve))
+#'  SNP is a (k*n) by 1 vector with additive allele dosages for a SNP.  
+#'  Z   is a (k*n) by k  matrix of ancestry factors (dummy variables)  
+#'  y    = SNP * b + Z * u + e
+#'  
+#'  OUTPUT VALUE IS A LIST OF
 #'  geno  is the (k*n) by m genotype matrix 
 #'  y     is the (k*n) by 1 phenotype vector  
 #'  yc    is the (k*n) by 1 vector with the causal genetic component of the phenotype (usually non-observable)
