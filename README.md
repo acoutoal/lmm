@@ -3,10 +3,10 @@ Implements several fast linear mixed model approaches for correlated samples / r
 The methods are based on the Generalised Least Squares approach.
 
 # gen_sim
-We also provide functions to simulate Genotype and Phenotype data subject to population structure with k subpopulations, ancestry-related random effects, and separate genetic effect and ancestry effect SNPs. The genotype differences in allele frequencies can be specificied.
+Simulates genotype and phenotype data subject to population structure with k subpopulations. The genotype differences in allele frequencies can be specificied for each sub-population. Phenotypes consists of ancestry-related random effects, genetic effects, and random error 
 
 # gwas_lmm_demo
-We demo the above functions on a ilustrative GWAS example correcting population structure using different appraoches and noting the impact of the different appraoches on the effect size estimates. 
+A demo of the above functions using a simulated GWAS with sub-population structure. We compare different methods for correcting population structure and assess the impact on the effect size estimates of these methods. 
 
 # LMM Lite
 We also implement the method described in the following paper:
